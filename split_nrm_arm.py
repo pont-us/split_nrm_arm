@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# By Pontus Lurcock, 2018.
+# This is free and unencumbered software released into the public domain.
+# See https://unlicense.org/UNLICENSE for full licensing statement.
+
 from typing import List, Tuple
 import argparse
 
