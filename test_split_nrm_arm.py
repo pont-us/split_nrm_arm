@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from unittest import TestCase
-import split_dat
+import split_nrm_arm
 
 
 class TestSplitDat(TestCase):
@@ -13,7 +13,7 @@ class TestSplitDat(TestCase):
             "four", "five", "six"
         ]
 
-        chunks = split_dat.split(lines)
+        chunks = split_nrm_arm.split(lines)
         self.assertEquals(2, len(chunks))
         self.assertEquals(lines, chunks[0] + chunks[1][1:])
         self.assertEquals(lines[0:3], chunks[0])
