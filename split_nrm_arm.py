@@ -24,12 +24,12 @@ def main():
     parser.add_argument("OUTPUT_FILE_NRM", type=str)
     parser.add_argument("OUTPUT_FILE_ARM", type=str)
     args = parser.parse_args()
-    with open(args.INPUT_FILE) as fh:
+    with open(args.INPUT_FILE, newline="") as fh:
         lines = fh.readlines()
     chunks = split(lines)
-    with open(args.OUTPUT_FILE_NRM, "w") as fh:
+    with open(args.OUTPUT_FILE_NRM, "w", newline="") as fh:
         fh.writelines(chunks[0])
-    with open(args.OUTPUT_FILE_ARM, "w") as fh:
+    with open(args.OUTPUT_FILE_ARM, "w", newline="") as fh:
         fh.writelines(chunks[1])
 
 
